@@ -1,28 +1,43 @@
 <!DOCTYPE HTML>
-<html>
-<head>
-	<title>CODEZILLA</title>
-	<h1> CODEZILLA </h1>
-	<h2> LinkedList </h2>
-	
+<html>	
+<head >	
+
+	<title> Codezilla! </title>
+	<h1> Codezilla! </h1>
+	<h3> Your Guide to Learning and Visualizing Data Structures </h3>
+
+    <style>
+        .button {
+           background-color: black;
+           border: gray;
+           color: white;
+           text-align: center;
+           font-size: 25px;
+           cursor: grabbing;
+        }
+        .button:hover {background-color: rgb(53, 52, 52)}
+     </style>
+
 </head>
-</html> 
 
-<body>
+<body>	
 
+    <br></br>
+   
+    <button class= "button"  id= "LinkedLists" onclick= moveToLinkedLists()> Linked Lists </button>
+    <script>
+        function moveToLinkedLists() {
+            window.location.assign("ATClongterm.html"); /*replace with actual URL*/
+        }
 
+    </script>
+
+    <br></br>
+    <button class= "button"> Heaps (coming soon...) </button>
+
+    <br></br>
+    <button class= "button"> Binary Trees (coming soon...) </button>
 
 </body>
 
-<button id="next"  onclick= moveToNextPage() >next</button>
-<button id="start">start</button>
-<button id="submit">submit</button>
-
-
-
-<script>
-	function moveToNextPage(){
-		window.location.assign("file:///C:/Users/stuti/eclipse-workspace/NEWEST%20FOLDER/Codezilla/src/codezillaPage3.html");
-	}
-	
-</script>
+</html>
