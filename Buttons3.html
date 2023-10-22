@@ -1,1 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Codezilla - Buttons3 </title>
+	<h1> Styling your button </h1>
 
+	<style> 
+		.hidden {
+  		display: block;
+		}
+			
+	</style>
+
+	
+</head>
+
+<body>
+	<br>
+	<p> 
+
+    Do you think the buttons we've used so far are ugly? Good news! You can make your buttons more stylish using CSS. <br><br>
+
+    How do you enter CSS code? In the &quothead&head section of your file, use the opening and closing tags &ltstyle&gt and &lt/style&gt. Inside
+    these tags, you want to create a class for your button. A button class could look something like this:<br><br>
+
+    .button { <br>
+    &emsp property1: value<br>
+    &emsp property2: value<br>
+    &emsp etc.<br>
+    }<br><br>
+
+    Replace &quoteproperty#&quote with actual properties provided by CSS! You can look up really huge lists of CSS properties online, but here are some useful 
+    ones for buttons: <br>
+    <ul>
+    <li>background-color: background color changes the color of your button! You can use a standard CSS color like black or red. A list of colors is available
+    <a href="https://www.w3schools.com/cssref/css_colors.php">here at the W3schools site</a>. This website is useful for other coding lessons as well! You can also type 
+      a color with the format &quotrgb(#, #, #)&quot.
+    </li>
+      
+    <li>border: changes the border color of your button.</li>
+    <li>color: changes the text color of your button </li>
+      <li>text-align: changes the way your text is aligned within the button. The options for this include left, right, center, and justify. </li>
+      <li> font-size: self-explanatory! Format your font size value like this: &quot#px&quot</li>
+      <li>cursor: change the way your cursor appears when hovering over the button! 
+        You can see some cursor options, once again, 
+        <a href="https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor"> at the W3schools site</a>
+      </li>
+  </ul> <br><br>
+
+Another cool feature is the ability to make your button change whenever your cursor hovers over it. This can be done by adding
+  .button:hover {} in CSS which is just like the .button class mentioned above. Inside, simply list the attributes you wish to change while your cursor hovers over it.
+<br><br>
+  Lastly, when you make your button in the body of your code, include &#39class= &quotbutton&quot&#39 in the opening tag (note that button is the name
+  of your button class).
+  For this exercise, you can try to replicate the button shown below, or just have fun creating your own button!
+	<p>
+		
+	<iframe width="100%" height="300" src="//jsfiddle.net/spatiban/jLbkcut3/7/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    
+	<div style="text-align: end;">
+  		<button onclick="toggle('solution')"> Show Solution </button>
+	</div>
+	<br>
+		
+	<iframe frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr8hqvsp" width="100%"></iframe>
+	<br> <br>
+		
+	<iframe hidden id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr8hjk84" width="100%"></iframe>
+
+
+	<br>
+	<button onclick="toggle('quokka_hug')"> I got it! (be honest...) </button>	
+	<br>
+	<img hidden id="quokka_hug" src="celebrate/quokka_hug.webp" width="150" height="150">	
+	
+	
+</body>
+</html> 
+
+<script>
+	function toggle(target) {
+		var targetElement = document.getElementById(target);
+		targetElement.classList.toggle("hidden");
+	}
+</script>
