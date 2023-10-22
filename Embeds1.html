@@ -1,15 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title> Codezilla - Embeds1 </title>
-	  <h1> Embedding an Online Compiler </h1>
-
-	  <style> 
+	<title> Codezilla - Embeds1 </title>
+	<h1> Embedding an Online Compiler </h1>
+	
+	<style> 
 		  .hidden {
   		display: block;
 		}
 			
-	  </style>
+	</style>
 
 </head>
 
@@ -40,6 +40,7 @@
 		
 	  <iframe hidden id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr8cnjge" width="100%"></iframe>
 
+			
 	  <br>
 	  <button onclick="toggle('happy_sloth')"> I got it! (be honest...) </button>	
 	  <br>
@@ -47,10 +48,12 @@
 	
 	
 </body>
+</html>
+			
 <script>
 	function toggle(target) {
 		var targetElement = document.getElementById(target);
 		targetElement.classList.toggle("hidden");
 	}
 </script>	      
-</html>
+
