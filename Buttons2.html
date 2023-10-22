@@ -29,23 +29,23 @@
     Next, create a button! You've already done this, but now there's one extra step. In the same way we included an 'id' attribute for our textarea box, 
     you'll want to include an &quotonclick=&quote attribute for our button. This is where you tell your button what JavaScript function to call when it's clicked
     (Note, you haven't written this function yet!). The formatting looks something like this: <br>
-    &ltbutton onclick="Yourfunction()"&gt Text Here &lt/button&gt <br>
+    &ltbutton onclick="Yourfunction()"&gt Text Here &lt/button&gt <br><br>
 
-    Then, create an empty text line with paragraph formating (&ltp&gt). Give your text an id, just like you did with the textarea box!
+    Then, create an empty text line with paragraph formating (&ltp&gt). Give your text an id, just like you did with the textarea box! <br><br>
     
     Now for the final step, the JavaScript function! Anytime you wish to include JavaScript in your code, you have to use the opening and closing tags 
-    &ltscript&gt and &lt/script&gt. Inside these tags, you can type your function! JavaScript functions look similar to functions in other code languages: <br>
+    &ltscript&gt and &lt/script&gt. Inside these tags, you can type your function! JavaScript functions look similar to functions in other code languages: <br><br>
     function functionName() { <br>
          *Type your function here*<br>
     }
-
+	<br><br>
     Inside your function use these lines of code (with some adjustment): <br>
     var x = document.getElementById("YourTextareaBoxID").value; <br>
     document.getElementById("YourParagraphTextID").innerHTML = x; <br>
 
     These first line gets the user input from the textbox and assigns it to variable x. The second line assigns the variable x to your paragraph text
     so that the paragraph text now has the user input! This only occurs when the user clicks the button, however. 
-    Notice that the textarea box and paragraph text are referenced by their ids. <br>
+    Notice that the textarea box and paragraph text are referenced by their ids. <br><br>
     
     Try combining all of the steps above to complete this exercise! Run your code at each step to make sure that it seems to be working (HTML is difficult
     to debug, unfortunately). See the sample below for what the output should look like.
@@ -58,10 +58,10 @@
 	</div>
 	<br>
 		
-	<iframe frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr8d938y" width="100%"></iframe>
+	<iframe frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr896kdd" width="100%"></iframe>
 	<br> <br>
 		
-	<iframe hidden id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr896kdd " width="100%"></iframe>
+	<iframe hidden id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr896kdd" width="100%"></iframe>
 
 
 	<br>
