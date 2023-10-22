@@ -16,18 +16,18 @@
 <body>
 	  <br>
 	  <p> 
-      Did you know you could embed an online compiler and ide to your webpage? 
-      First an online compiler that you wish to embed and create account. Here we use OneCompiler as an example.
-      Embedding a compiler requires the &ltiframe&gt tag which creates a frame where the compiler is embedder. Inside the tag, specify the width and height of the frame, the link to the embedded version of the online compiler and the width of the frameborder.
-      Go to OnlineCompiler copy the name of the project and add it to this link:<bc>
-      https://onecompiler.com/embed/html/AddNameHere<bc>
-      This link to the embedded version of the onine compiler.
-      The code should look like this:<br>
-		  &ltiframe width="PercentOfScreenWidthFrameCovers" height="Height" src="LinkToSource" frameborder="WidthOfFrameBorder" &lt/iframe&gt<br>
-		  Now try it yourself (like the one shown below) using the line of code above!
+      		Did you know you could embed an online compiler and ide to your webpage? 
+      		First an online compiler that you wish to embed and create account. Here we use OneCompiler as an example.
+      		Embedding a compiler requires the &ltiframe&gt tag which creates a frame where the compiler is embedder. Inside the tag, specify the width and height of the frame, the link to the embedded version of the online compiler and the width of the frameborder.
+      		Go to OnlineCompiler copy the name of the project and add it to this link:<bc>
+     		https://onecompiler.com/embed/html/AddNameHere<bc>
+      		This link to the embedded version of the onine compiler.
+      		The code should look like this:<br>
+			&ltiframe width="PercentOfScreenWidthFrameCovers" height="Height" src="LinkToSource" frameborder="WidthOfFrameBorder" &lt/iframe&gt<br>
+		Now try it yourself (like the one shown below) using the line of code above!
 	  <p>
 		
-	  <iframe width="100%" height="300" src="//jsfiddle.net/Night_01/aom7qg5t/4/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+	  <iframe width="50%" height="200" src="//jsfiddle.net/Night_01/aom7qg5t/4/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 	  <br>
 
 	  <div style="text-align: end;">
@@ -40,7 +40,6 @@
 		
 	  <iframe hidden id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr8cnjge" width="100%"></iframe>
 
-
 	  <br>
 	  <button onclick="toggle('happy_sloth')"> I got it! (be honest...) </button>	
 	  <br>
@@ -48,4 +47,10 @@
 	
 	
 </body>
+<script>
+	function toggle(target) {
+		var targetElement = document.getElementById(target);
+		targetElement.classList.toggle("hidden");
+	}
+</script>	      
 </html>
