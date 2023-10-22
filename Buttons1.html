@@ -8,6 +8,11 @@
 	<style> 
 		.hidden {
   		display: block;
+
+		.text-center {
+			text-align: center;
+		}
+			
 	</style>
 }
 	
@@ -25,29 +30,20 @@
 		
 	<iframe width="50%" height="200" src="//jsfiddle.net/spatiban/dqwj5cp3/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 	<br>
+	<div class="text-center">
+	<button onclick="toggle('solution')"> Show Solution </button>
+	</div>
+	<br>
 		
-	<button onclick="toggle('solution')"> Show Solution </button>	
-	<br>
 	<iframe frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr7ykckq" width="100%"></iframe>
-	<br>
+	<br> <br>
+		
 	<iframe hidden id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr82ue4x" width="100%"></iframe>
-	<script>
-		function show_solution() {
-  			var targetElement = document.getElementById("solution");
-  			targetElement.classList.toggle("hidden");
-	}
-	</script>
+
 
 	<br>
 	<button onclick="toggle('happy_sloth')"> I got it! (be honest...) </button>	
-	<img hidden id="happy_sloth" src="celebrate/happy_sloth.gif" width="50" height="50">
-	<script>
-		function celebrate() {
-  			var targetElement = document.getElementById("happy_sloth");
-  			targetElement.classList.toggle("hidden");
-	}	
-	</script>
-	
+	<img hidden id="happy_sloth" src="celebrate/happy_sloth.gif" width="150" height="150">	
 	
 	
 </body>
