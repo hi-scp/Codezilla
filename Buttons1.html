@@ -16,36 +16,18 @@
 		&ltbutton&gt InsertTextOnButtonHere &lt/button&gt<br>
 		Buttons1: Try creating your own basic button below using the line of code above!
 	<p>
-	
-	<iframe
- frameBorder="0"
- height="450px"  
- src="https://onecompiler.com/embed/html/3zr7ykckq" 
- width="100%"
- ></iframe>
 		
-	<canvas
-		fillRect(1, 2, 4, 5);
-	</canvas>
+	<button id="button" onclick="showSolution()"> Show Solution </button>
+	<iframe> id="code_solution"></iframe>
+	<script>
+		function showSolution() {
+  			document.getElementById("code_solution").frameBorder = "0";
+			document.getElementById("code_solution").height = "450px";
+			document.getElementById("code_solution").src = "https://onecompiler.com/embed/html/3zr7ykckq";
+			docutment.getElementById("code_solution").width = "100%";
+		}
+	</script>
+		
 	
 </body>
 </html> 
-
-
-
-	<!--
-	<div data-pym-src= "https://www.jdoodle.com/plugin/v0/d57c74f030a7ecc20adfc5f1560c1f35/e597e9b1715e8bb04452f2df38169f07?stdin=0&arg=0">
-	</div>
-		<button id=""  onclick= moveToBackPage() >back</button>
-	<script
-	src= "https://www.jdoodle.com/assets/jdoodle-pym.min.js"
-	type = "text/javascript">
-	</script>
-
-<script>
-	function moveToBackPage(){
-		window.location.assign("file:///C:/Users/stuti/eclipse-workspace/NEWEST%20FOLDER/Codezilla/src/technicaCodezillaMain.html");
-	}
-</script>
-	--!>
-
