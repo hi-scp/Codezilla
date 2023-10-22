@@ -39,13 +39,13 @@
 	</script>
 
 	<br>
-	<button onclick="celebrate("happy_sloth")"> I got it! (be honest...) </button>	
+	<button onclick="celebrate()"> I got it! (be honest...) </button>	
 	<img hidden id="happy_sloth" src="celebrate/happy_sloth.gif" width="50" height="50">
 	<script>
-		function celebrate(target) {
-			var targetElement = document.getElementById(target);
-			targetElement.classList.toggle("hidden");
-		}	
+		function celebrate() {
+  			var targetElement = document.getElementById("happy_sloth");
+  			targetElement.classList.toggle("hidden");
+	}	
 	</script>
 	
 	
