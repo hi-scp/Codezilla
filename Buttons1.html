@@ -24,19 +24,26 @@
 	<p>
 		
 	<script async src="//jsfiddle.net/spatiban/Lw5fphj7/1/embed/result/"></script>	
-	<button id="button" onclick="show_solution()"> Show Solution </button>
-		
-	<iframe id = "buttons1" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr7ykckq" width="100%"></iframe>
-
+	<button onclick="show_solution()"> Show Solution </button>	
+	<iframe frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr7ykckq" width="100%"></iframe>
 	<iframe hidden id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr82ue4x" width="100%"></iframe>
-	
 	<script>
 		function show_solution() {
   			var targetElement = document.getElementById("solution");
   			targetElement.classList.toggle("hidden");
 	}
 	</script>
-		
+	
+	<button onclick="celebrate("happy_sloth")"> I got it! (be honest...) </button>	
+	<img hidden id="happy_sloth" src="celebrate/happy_sloth.gif" width="20%" height="20%">
+	<script>
+		function celebrate(target) {
+			var targetElement = document.getElementById(target);
+			targetElement.classList.toggle("hidden");
+		}	
+	</script>
+	
+	
 	
 </body>
 </html> 
