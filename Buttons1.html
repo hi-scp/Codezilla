@@ -4,6 +4,12 @@
 	<title> Codezilla - Buttons1 </title>
 	<h1> Buttons 1 </h1>
 	<h3> Creating a Button </h3>
+
+	<style> 
+		.hidden {
+  		display: none;
+	</style>
+}
 	
 </head>
 
@@ -18,16 +24,23 @@
 	<p>
 		
 	<button id="button" onclick="showSolution()"> Show Solution </button>
-	<iframe> id="code_solution"></iframe>
+		
+	<iframe id = "buttons1" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr7ykckq" width="100%"></iframe>
+
+	<iframe id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr7ykckq" width="100%"></iframe>
+	
 	<script>
-		function showSolution() {
-  			document.getElementById("code_solution").frameBorder = "0";
-			document.getElementById("code_solution").height = "450px";
-			document.getElementById("code_solution").src = "https://onecompiler.com/embed/html/3zr7ykckq";
-			docutment.getElementById("code_solution").width = "100%";
-		}
+		function show_solution() {
+  			var targetElement = document.getElementById("solution");
+  			targetElement.classList.toggle("hidden");
+	}
 	</script>
 		
 	
 </body>
 </html> 
+
+
+
+
+
