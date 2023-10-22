@@ -27,7 +27,7 @@
 		  Now try it yourself (like the one shown below) using the line of code above!
 	  <p>
 		
-	  <iframe width="100%" height="300" src="//jsfiddle.net/Night_01/aom7qg5t/3/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+	  <iframe width="100%" height="300" src="//jsfiddle.net/Night_01/aom7qg5t/4/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 	  <br>
 
 	  <div style="text-align: end;">
@@ -38,7 +38,7 @@
 	  <iframe frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr8apzme" width="100%"></iframe>
 	  <br> <br>
 		
-	  <iframe hidden id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/Example" width="100%"></iframe>
+	  <iframe hidden id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr8cnjge" width="100%"></iframe>
 
 
 	  <br>
