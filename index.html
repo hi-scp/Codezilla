@@ -4,7 +4,7 @@
 
 	<title> Codezilla! </title>
 	<h1> Codezilla! </h1>
-	<h3> Your Guide to Learning and Visualizing Data Structures </h3>
+	<h3> Your Intro Guide to Learning HTML/JavaScript/CSS </h3>
 
     <style>
         .button {
@@ -24,19 +24,30 @@
 
     <br></br>
    
-    <button class= "button"  id= "LinkedLists" onclick= moveToLinkedLists()> Linked Lists </button>
+    <button class= "button"  id= "text" onclick= moveToText()> Linked Lists </button>
     <script>
-        function moveToLinkedLists() {
-            window.location.assign("LinkedLists.html"); /*replace with actual URL*/
+        function moveToText() {
+            window.location.assign("Text.html"); /*replace with actual URL*/
         }
-
     </script>
 
     <br></br>
-    <button class= "button"> Heaps (coming soon...) </button>
+    <button class= "button" id = "buttons" onclick= moveToButtons()> Buttons </button>
+    <script>
+	function moveToButtons() {
+    		window.location.assign("Buttons.html"); /*replace with actual URL*/
+	}	
+    </script>
 
     <br></br>
-    <button class= "button"> Binary Trees (coming soon...) </button>
+    <button class= "button" id = "embeds" onclick= moveToEmbeds()> Buttons </button>
+    <script>
+	function moveToButtons() {
+    		window.location.assign("Embeds.html"); /*replace with actual URL*/
+	}	
+    </script>
+
+
 
 </body>
 
