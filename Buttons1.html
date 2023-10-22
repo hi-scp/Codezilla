@@ -26,7 +26,7 @@
 	<iframe width="50%" height="200" src="//jsfiddle.net/spatiban/dqwj5cp3/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 	<br>
 		
-	<button onclick="show_solution()"> Show Solution </button>	
+	<button onclick="toggle('solution')"> Show Solution </button>	
 	<br>
 	<iframe frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr7ykckq" width="100%"></iframe>
 	<br>
@@ -39,7 +39,7 @@
 	</script>
 
 	<br>
-	<button onclick="celebrate()"> I got it! (be honest...) </button>	
+	<button onclick="toggle('happy_sloth')"> I got it! (be honest...) </button>	
 	<img hidden id="happy_sloth" src="celebrate/happy_sloth.gif" width="50" height="50">
 	<script>
 		function celebrate() {
@@ -53,7 +53,12 @@
 </body>
 </html> 
 
-
+<script>
+	function toggle(target) {
+		var targetElement = document.getElementById(target);
+		targetElement.classList.toggle("hidden");
+	}
+</script>
 
 
 
