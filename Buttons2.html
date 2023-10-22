@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Codezilla - Buttons2 </title>
+	<h1> Making your button do something </h1>
+
+	<style> 
+		.hidden {
+  		display: block;
+		}
+			
+	</style>
+
+	
+</head>
+
+<body>
+	<br>
+	<p> 
+    You probably noticed that the button in the last exercise didn't actually <i>do</i> anything. Let's fix that! JavaScript is used to make elements of HTML 
+    (like buttons) interactive. In this exercise, use a button to show/hide some text that the user inputs. This exercise is a little trickier, but you can do it!
+    <br><br>
+    First, you'll have to include a textarea box. This is basically a textbox that allows the user to input some text. Like all HTML elements, the textarea box
+    is made with opening and closing tags. The opening tag for a textarea box is: &lttextarea&gt. In between the tags, you can display some default text for the
+    textarea box. You'll want to give your textarea box an id that you can use to reference the box in your code. This is done by including &quotid=&quot and the name
+    you want to assign the box. This name is not visible to the user. The code line should look something like this: <br>
+    &lttextarea id = "nameOfTextAreaBox"&gt Default Text Here &lt/textarea&gt <br><br>
+
+    Next, create a button! You've already done this, but now there's one extra step. In the same way we included an 'id' attribute for our textarea box, 
+    you'll want to include an &quotonclick=&quote attribute for our button. This is where you tell your button what JavaScript function to call when it's clicked
+    (Note, you haven't written this function yet!). The formatting looks something like this: <br>
+    &ltbutton onclick="Yourfunction()"&gt Text Here &lt/button&gt <br>
+
+    Then, create an empty text line with paragraph formating (&ltp&gt). Give your text an id, just like you did with the textarea box!
+    
+    Now for the final step, the JavaScript function! Anytime you wish to include JavaScript in your code, you have to use the opening and closing tags 
+    &ltscript&gt and &lt/script&gt. Inside these tags, you can type your function! JavaScript functions look similar to functions in other code languages: <br>
+    function functionName() { <br>
+         *Type your function here*<br>
+    }
+
+    Inside your function use these lines of code (with some adjustment): <br>
+    var x = document.getElementById("YourTextareaBoxID").value; <br>
+    document.getElementById("YourParagraphTextID").innerHTML = x; <br>
+
+    These first line gets the user input from the textbox and assigns it to variable x. The second line assigns the variable x to your paragraph text
+    so that the paragraph text now has the user input! This only occurs when the user clicks the button, however. 
+    Notice that the textarea box and paragraph text are referenced by their ids. <br>
+    
+    Try combining all of the steps above to complete this exercise! Run your code at each step to make sure that it seems to be working (HTML is difficult
+    to debug, unfortunately). See the sample below for what the output should look like.
+	<p>
+		
+	<iframe width="100%" height="300" src="//jsfiddle.net/spatiban/4y6qgarh/9/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+	<div style="text-align: end;">
+  		<button onclick="toggle('solution')"> Show Solution </button>
+	</div>
+	<br>
+		
+	<iframe frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr8d938y" width="100%"></iframe>
+	<br> <br>
+		
+	<iframe hidden id = "solution" frameBorder="0" height="450px" src="https://onecompiler.com/embed/html/3zr896kdd " width="100%"></iframe>
+
+
+	<br>
+	<button onclick="toggle('quokka_hug')"> I got it! (be honest...) </button>	
+	<br>
+	<img hidden id="quokka_hug" src="celebrate/quokka_hug.webp" width="150" height="150">	
+	
+	
+</body>
+</html> 
+
+<script>
+	function toggle(target) {
+		var targetElement = document.getElementById(target);
+		targetElement.classList.toggle("hidden");
+	}
+</script>
