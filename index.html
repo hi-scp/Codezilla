@@ -21,9 +21,16 @@
 </head>
 
 <body>	
-
+	
     <br></br>
-   
+    <button class= "button"  id= "introPage" onclick= moveToIntroPage()> Introduction </button>
+    <script>
+        function moveToIntroPage() {
+            window.location.assign("IntroPage.html"); /*replace with actual URL*/
+        }
+    </script>
+	
+    <br></br>
     <button class= "button"  id= "text" onclick= moveToText()> Linked Lists </button>
     <script>
         function moveToText() {
